@@ -126,6 +126,7 @@ a {
 /* Hero */
 .hero {
     margin-top: 50px;
+    padding-bottom: 79px;
 }
 
 .hero .body {
@@ -318,4 +319,80 @@ a {
     text-align: center;
     color: #ffffff;
     background: #1ebfc1;
+}
+
+/* Features */
+.features {
+    margin-top: 130px;
+}
+
+.features .title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.features .heading.lv2 {
+    margin-top: 18px;
+    width: 577px;
+}
+
+.features .desc {
+    margin-top: 18px;
+    width: 590px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.features .list {
+    margin-top: 80px;
+    display: flex;
+}
+
+.list .item {
+    margin-right: 209px;
+}
+
+.list .item .live,
+.list .item .discuss,
+.list .item .task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 102px;
+    height: 106px;
+    background: #ffc147;
+    border-radius: 18px;
+}
+
+.list .item .discuss {
+    background: #ff947a;
+}
+
+.list .item .task {
+    background: #bf83ff;
+}
+
+.list .item h4 {
+    margin-top: 26px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.list .item .desc {
+    font-size: 1.6rem;
+    line-height: 1.69;
+}
+
+.list .item .desc {
+    margin-top: 16px;
+    width: 223px;
+}
+
+.list .item:first-child .desc {
+    width: 168px;
 }
