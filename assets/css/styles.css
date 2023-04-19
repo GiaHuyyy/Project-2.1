@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #1ebfc1;
+    --secondary-color: #2ac9bf;
 }
 
 html {
@@ -35,7 +36,9 @@ body {
 }
 
 .btn:hover,
-.courses .row .view-link:hover {
+.courses .row .view-link:hover,
+.prev-page:hover,
+.next-page:hover {
     opacity: 0.8;
 }
 
@@ -521,8 +524,8 @@ a {
 
 .courses .info-foot span {
     position: relative;
-    padding-left: 14px;
-    margin-right: 7px;
+    padding-left: 16px;
+    margin-right: 10px;
 }
 
 .courses .info-foot span::after {
@@ -562,4 +565,79 @@ a {
     line-height: 1.5;
     text-align: center;
     color: #767e7e;
+}
+
+/* Feed Back */
+.feedback {
+    margin-top: 264px;
+}
+
+.feedback .body {
+    display: flex;
+}
+
+.feedback .info {
+    width: 419px;
+}
+
+.feedback .info .open-quotes {
+    margin-top: 37px;
+}
+
+.feedback .info .desc {
+    margin-top: 27px;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #5d6564;
+}
+
+.feedback .name {
+    margin-top: 33px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.feedback .name em {
+    position: relative;
+    padding-left: 13px;
+    font-weight: 500;
+    color: #070707;
+}
+
+.feedback .name em::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 2px;
+    background: currentColor;
+    left: 0;
+    top: 10px;
+}
+
+.feedback .pages {
+    margin-top: 52px;
+}
+
+.feedback .pages .prev-page,
+.feedback .pages .next-page {
+    width: 50px;
+    height: 50px;
+    line-height: 56px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: none;
+    padding: 0;
+    background: var(--secondary-color);
+    cursor: pointer;
+}
+
+.feedback .typical {
+    width: 679px;
+    margin-left: 72px;
+}
+
+.typical img {
+    width: 100%;
 }
