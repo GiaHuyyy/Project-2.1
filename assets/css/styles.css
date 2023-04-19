@@ -536,3 +536,30 @@ a {
     left: 0;
     top: 7px;
 }
+
+/* Stats */
+.stats {
+    margin-top: 389px;
+}
+
+.stats .body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 202px;
+}
+
+.stats h2 {
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.5;
+    color: #0d1111;
+    margin-bottom: 11px;
+}
+
+.stats span {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #767e7e;
+}
