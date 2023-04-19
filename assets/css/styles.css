@@ -34,7 +34,8 @@ body {
     border-radius: 14px;
 }
 
-.btn:hover {
+.btn:hover,
+.courses .row .view-link:hover {
     opacity: 0.8;
 }
 
@@ -59,6 +60,14 @@ a {
 
 .heading.lv3 {
     font-size: 22px;
+    line-height: 1.5;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #767e7e;
 }
 
 .line-clamp {
@@ -318,19 +327,12 @@ a {
     line-height: 33px;
     text-align: center;
     color: #ffffff;
-    background: #1ebfc1;
+    background: var(--primary-color);
 }
 
 /* Features */
 .features {
     margin-top: 130px;
-}
-
-.features .title {
-    font-weight: 700;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #767e7e;
 }
 
 .features .heading.lv2 {
@@ -351,13 +353,13 @@ a {
     display: flex;
 }
 
-.list .item {
+.features .list .item {
     margin-right: 209px;
 }
 
-.list .item .live,
-.list .item .discuss,
-.list .item .task {
+.features .list .item .live,
+.features .list .item .discuss,
+.features .list .item .task {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -367,15 +369,15 @@ a {
     border-radius: 18px;
 }
 
-.list .item .discuss {
+.features .list .item .discuss {
     background: #ff947a;
 }
 
-.list .item .task {
+.features .list .item .task {
     background: #bf83ff;
 }
 
-.list .item h4 {
+.features .list .item h4 {
     margin-top: 26px;
     font-weight: 600;
     font-size: 2rem;
@@ -383,16 +385,154 @@ a {
     color: #0d1111;
 }
 
-.list .item .desc {
+.features .list .item .desc {
     font-size: 1.6rem;
     line-height: 1.69;
 }
 
-.list .item .desc {
+.features .list .item .desc {
     margin-top: 16px;
     width: 223px;
 }
 
-.list .item:first-child .desc {
+.features .list .item:first-child .desc {
     width: 168px;
+}
+
+/* Courses */
+.courses {
+    margin-top: 130px;
+}
+
+.courses .heading.lv2 {
+    margin-top: 18px;
+    line-height: 1.5;
+}
+
+.courses .row {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses .row .desc {
+    width: 525px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #767e7e;
+}
+
+.courses .row .view-link {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-decoration-line: underline;
+    color: var(--primary-color);
+}
+.courses .list {
+    margin-top: 79px;
+    display: flex;
+    gap: 47px;
+}
+
+.courses .list .item {
+    position: relative;
+    width: calc(33.33333% - 31.33333px);
+}
+
+.courses .item .thumb {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.courses .item .thumb img {
+    width: calc(100% + 2px);
+    margin: -1px;
+    height: 393px;
+    object-fit: cover;
+    transition: all 0.4s;
+    display: block;
+    transform: scale(1);
+}
+
+.courses .item .thumb::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    inset: 0;
+    opacity: 0.35;
+    background: #d0efed;
+    transition: all 0.4s;
+    border-radius: 8px;
+}
+
+.courses .list .item:hover .thumb::after {
+    opacity: 0;
+}
+
+.courses .list .item:hover .thumb img {
+    transform: scale(1.2);
+}
+
+.courses .info {
+    position: absolute;
+    width: 325px;
+    height: 195px;
+    background: #ffffff;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    left: 17px;
+    bottom: -124px;
+}
+
+.courses .info .info-body {
+    margin: 18px 0 29px 25px;
+}
+
+.courses .info .price {
+    display: block;
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.courses .info em {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0d1111;
+}
+
+.courses .info .desc,
+.courses .info-foot span {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #9da6a5;
+}
+
+.courses .info-foot {
+    margin-top: 18px;
+}
+
+.courses .info-foot span {
+    position: relative;
+    padding-left: 14px;
+    margin-right: 7px;
+}
+
+.courses .info-foot span::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    left: 0;
+    top: 7px;
 }
